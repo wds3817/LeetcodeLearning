@@ -12,7 +12,8 @@ public class finFirstBadVersion {
                     if (isBadVersion(mid)) {
                         end = mid;
                     } else {
-                        start = mid + 1;
+                        start = mid + 1; // start = mid 也可以，leetcode runtime分析
+                        // 好像有点bug， 一会98%, 一会儿 38%
                     }
                 }
                 if (isBadVersion(start)) {
